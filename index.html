@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container"> <!-- container-->
+        <div> <!-- div contendo o inputs de valores -->
+            <input type="text" name="" id="entrada" placeholder="Descrição"><br>
+
+            <input type="number" name="" id="valor" placeholder="R$">
+
+            <select name="" id="opt-entrada">
+                <option value="receita">Receita</option>
+                <option value="despesa">Despesa</option>
+            </select>
+
+            <input type="number" name="" id="parcelas" placeholder="Parcelas">
+            <label for="dataPag">Data de pagamento</label>
+            <input type="date" name="data" id="dataPag">
+            <input type="button" value="Incluir" id="button">
+        </div>
+
+        <div id="resultados"> <!-- onde ficará os outputs-->
+           
+        </div>
+        <script src="app.js"></script>
+    </div>
+</body>
+</html>

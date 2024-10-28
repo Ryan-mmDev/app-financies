@@ -1,0 +1,26 @@
+#container{
+    margin: auto;
+    background-color: rgb(244, 246, 248);
+}
+
+body{
+    background-color: rgb(220, 242, 243);
+}
+#entrada{
+    height: 40px;
+    width: 700px;
+}
+
+#opt-entrada, #parcelas, #dataPag{
+    height: 40px;
+    width: 70px;
+}
+#button{
+    height: 40px;
+    width: 70px;
+    margin-left: 80px;}
+
+#valor{
+    height: 35px;
+    margin-top: 15px;
+}
