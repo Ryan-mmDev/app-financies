@@ -10,14 +10,26 @@ submitButton.addEventListener('click', function(){
         tipo: document.getElementById('opt-entrada').value,
         dataPag: document.getElementById('dataPag').value  
     }
-
+    
     db_valores.push(input)
     console.log(input)
-    const resultScreen = document.querySelector('#resultados');
+    
+    const newInput = document.createElement('tr')
 
-    const div = document.createElement('div');
-    div.innerText = `${input.desc} - ${input.valor} - ${input.tipo} - ${input.dataPag}`;
+    const descCell = document.createElement('td')
+    descCell.innerText = input.desc;
+    newInput.appendChild(descCell)
+    const valorCell = document.createElement('td')
+    valorCell.innerText = input.valor;
+    newInput.appendChild(valorCell)
+    const dataCell = document.createElement('td')
+    dataCell.innerText = input.dataPag;
+    newInput.appendChild(dataCell)
 
+    const resultScreen = document.querySelector('#resultados tbody');
+    resultScreen.appendChild(newInput);
+    
+    
 }  )
 
 

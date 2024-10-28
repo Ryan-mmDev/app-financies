@@ -1,26 +1,54 @@
-#container{
-    margin: auto;
-    background-color: rgb(244, 246, 248);
-}
-
-body{
+body {
     background-color: rgb(220, 242, 243);
-}
-#entrada{
-    height: 40px;
-    width: 700px;
+    font-family: Arial, sans-serif; 
 }
 
-#opt-entrada, #parcelas, #dataPag{
-    height: 40px;
-    width: 70px;
+#container {
+    margin: 20px auto; 
+    background-color: rgb(243, 245, 247);
+    width: 95%;
+    max-width: 800px; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
 }
-#button{
-    height: 40px;
-    width: 70px;
-    margin-left: 80px;}
 
-#valor{
-    height: 35px;
-    margin-top: 15px;
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    height: 50px;
+    width: calc(100% - 20px); 
+    margin-bottom: 15px; 
+    padding: 0 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+input[type="button"] {
+    height: 40px;
+    width: 100%; /* Full width button */
+    background-color: #28a745; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+input[type="button"]:hover {
+    background-color: #218838; 
+}
+
+label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+#resultados {
+    margin-top: 20px; 
+    padding: 10px;
+    background-color: #ffffff; 
+    border-radius: 4px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }

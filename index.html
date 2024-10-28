@@ -9,7 +9,7 @@
 <body>
     <div id="container"> <!-- container-->
         <div> <!-- div contendo o inputs de valores -->
-            <input type="text" name="" id="entrada" placeholder="Descrição"><br>
+            <input type="text" name="" id="entrada" placeholder="Descrição">
 
             <input type="number" name="" id="valor" placeholder="R$">
 
@@ -18,13 +18,17 @@
                 <option value="despesa">Despesa</option>
             </select>
 
-            <input type="number" name="" id="parcelas" placeholder="Parcelas">
+           <br> <input type="number" name="" id="parcelas" placeholder="Parcelas">
             <label for="dataPag">Data de pagamento</label>
             <input type="date" name="data" id="dataPag">
             <input type="button" value="Incluir" id="button">
         </div>
-
-        <div id="resultados"> <!-- onde ficará os outputs-->
+        <div>
+        <table id="resultados" style="border: 1px solid red;">
+            <tbody>
+                
+            </tbody>
+        </table>
            
         </div>
         <script src="app.js"></script>
